@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Translator - SocialTranslator Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Translator";
+    var mkdocs_page_input_path = "api/translator.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SocialTranslator Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Auth</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../auth/jwt/">JWT</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../auth/oauth2/">OAuth2</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../community/">Community</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Translator</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#translator-api">Translator API</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#endpoints">Endpoints</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Translators</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../translators/how-to/">Add new</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../translators/gmail/">Gmail</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../translators/skype/">Skype</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../translators/telegram/">Telegram</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../translators/whatsapp/">Whatsapp</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Models</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../models/message/">Message</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../models/hsn/">Has Social Network</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SocialTranslator Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>API &raquo;</li>
+        
+      
+    
+    <li>Translator</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/farodrig/SocialTranslator/edit/master/docs/api/translator.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="translator-api">Translator API<a class="headerlink" href="#translator-api" title="Permanent link">#</a></h1>
+<p>This API is oriented to be used for other apps, in order to communicate with their clients
+without needing to know how to use each one of the social networks.</p>
+<p>To be able to use any of these endpoints you need first have a valid token provided by the authentication endpoints 
+(either <a href="../../auth/jwt/">JWT</a> or <a href="../../auth/oauth2/">OAuth2</a>)</p>
+<p>The documentation for this API and his endpoints can be found <a href="https://socialtranslator.dcc.uchile.cl/docs/#/translator">here</a>.</p>
+<h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">#</a></h2>
+<h4 id="translatorsendmessage"><a href="https://socialtranslator.dcc.uchile.cl/docs/#!/translator/translator_sendMessage_create">/translator/sendMessage/</a><a class="headerlink" href="#translatorsendmessage" title="Permanent link">#</a></h4>
+<p>Allows to send a message from a specific user, to a specific user, through an specific social network. 
+'fromUser' and 'toUser' must be the username in the specified social network.</p>
+<ul>
+<li>Method: POST</li>
+<li>Request Type: JSON</li>
+<li>
+<p>Request example:</p>
+<p><code>{
+  "through": "string",
+  "fromUser": "string",
+  "toUser": "string",
+  "content": "string TEXT_MESSAGE"
+  "file": FILE_MESSAGE
+}</code></p>
+</li>
+<li>
+<p>Response Type: JSON</p>
+</li>
+<li>
+<p>Response example:</p>
+<p><code>{
+    "detail": "string SOME_MESSAGE",
+}</code></p>
+</li>
+</ul>
+<h4 id="translatorconfigure"><a href="https://socialtranslator.dcc.uchile.cl/docs/#!/translator/translator_configure_create">/translator/configure/</a><a class="headerlink" href="#translatorconfigure" title="Permanent link">#</a></h4>
+<p>Allow to configure a Social Network Translator for a specific user</p>
+<ul>
+<li>Method: GET</li>
+<li>Request Type: JSON</li>
+<li>
+<p>Request example:</p>
+<p><code>{
+  "username": "string",
+  "social": "string",
+  "auth_code": "string"
+}</code></p>
+</li>
+<li>
+<p>Response Type: JSON</p>
+</li>
+<li>
+<p>Response example:</p>
+<p><code>{
+    "detail": "string SOME_MESSAGE",
+    "redirectURL": "URL_TO_REDIRECT_USER OPTIONAL"
+}</code></p>
+</li>
+</ul>
+<h4 id="translatorauthsocial"><a href="https://socialtranslator.dcc.uchile.cl/docs/#!/translator/translator_auth_read">/translator/auth/{social}/</a><a class="headerlink" href="#translatorauthsocial" title="Permanent link">#</a></h4>
+<p>Receive authentication callback from oauth2 authentication systems. For example, Gmail.</p>
+<ul>
+<li>Method: GET</li>
+<li>Request Type: Query</li>
+<li>
+<p>Request example:</p>
+<p><code>/translator/auth/gmail/?state=1234&amp;code=1234</code></p>
+</li>
+<li>
+<p>Response Type: JSON</p>
+</li>
+<li>
+<p>Response example:</p>
+<p><code>{
+    "detail": "string SOME_MESSAGE",
+    "redirectURL": "URL_TO_REDIRECT_USER OPTIONAL"
+}</code></p>
+</li>
+</ul>
+<h4 id="translatorpush-notifsocial"><a href="https://socialtranslator.dcc.uchile.cl/docs/#!/translator/translator_configure_create">/translator/push-notif/{social}/</a><a class="headerlink" href="#translatorpush-notifsocial" title="Permanent link">#</a></h4>
+<p>Receive push notifications from different social networks</p>
+<ul>
+<li>Method: GET</li>
+<li>Request Type: JSON</li>
+<li>Request example: Depends on the source</li>
+<li>Response Type: JSON</li>
+<li>
+<p>Response example:</p>
+<p><code>{
+    "detail": "string SOME_MESSAGE",
+    "redirectURL": "URL_TO_REDIRECT_USER OPTIONAL"
+}</code></p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../translators/how-to/" class="btn btn-neutral float-right" title="Add new">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../community/" class="btn btn-neutral" title="Community"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/farodrig/SocialTranslator/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../community/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../translators/how-to/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Add new - SocialTranslator Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Add new";
+    var mkdocs_page_input_path = "translators/how-to.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SocialTranslator Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Auth</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../auth/jwt/">JWT</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../auth/oauth2/">OAuth2</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../api/community/">Community</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../api/translator/">Translator</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Translators</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Add new</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#how-to-add-a-new-translator-to-the-project">How to add a new Translator to the Project</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#interface">Interface</a></li>
+        
+            <li><a class="toctree-l4" href="#enable-new-translator">Enable new Translator</a></li>
+        
+            <li><a class="toctree-l4" href="#utils">Utils</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gmail/">Gmail</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../skype/">Skype</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../telegram/">Telegram</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../whatsapp/">Whatsapp</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Models</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../models/message/">Message</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../models/hsn/">Has Social Network</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SocialTranslator Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Translators &raquo;</li>
+        
+      
+    
+    <li>Add new</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/farodrig/SocialTranslator/edit/master/docs/translators/how-to.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="how-to-add-a-new-translator-to-the-project">How to add a new Translator to the Project<a class="headerlink" href="#how-to-add-a-new-translator-to-the-project" title="Permanent link">#</a></h1>
+<p>First, you need understand what is a translator. 
+Figuratively, it's a personal assistant who knows how to speak a specific language 
+(in our case, use a social network), 
+have a unique client (user) and helps him to speak (send messages) with his contacts.</p>
+<p>In other works, each user have one translator for each social network.</p>
+<p>Understanding this, we need to know the interface that every translator must follow.</p>
+<h2 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">#</a></h2>
+<p>Every translator should extends class Translator (It's a abstract class, because python doesn't have interfaces), 
+following the Factory Pattern.</p>
+<p><img alt="" src="../factory.png" /></p>
+<p>The translator class have 3 code to indicate different states and 6 abstract methods to be overridden. 
+The class looks like:</p>
+<pre><code>class Translator(ABC):
+
+    MORE_INFO_CODE = 1 # Indicate that the method need more info or optional parameters
+    SUCCESS_CODE = 2 # Indicate that the method finished correctly
+    ERROR_CODE = 4 # Indicate that the method fail in the task
+
+    @abstractmethod
+    def isConnected(self):
+        pass
+
+    @abstractmethod
+    def configure(self, data):
+        pass
+
+    @abstractmethod
+    def sendText(self, message):
+        pass
+
+    @abstractmethod
+    def sendImage(self, message):
+        pass
+
+    @abstractmethod
+    def sendVideo(self, message):
+        pass
+
+    @abstractmethod
+    def sendAudio(self, message):
+        pass
+</code></pre>
+
+<p>They should implement the next methods:</p>
+<h3 id="isconnected">isConnected<a class="headerlink" href="#isconnected" title="Permanent link">#</a></h3>
+<p>This method should verify if the user is currently connected to the social network. 
+In order to know if the social network should be configurated or nor.</p>
+<ul>
+<li>Signature: <code>def isConnected(self):</code></li>
+<li>Return: Boolean</li>
+</ul>
+<h3 id="configure">configure<a class="headerlink" href="#configure" title="Permanent link">#</a></h3>
+<p>This method should connect the user to the social network or 
+send a request to the social network to allow the connection.</p>
+<ul>
+<li>Signature: <code>def isConnected(self, data):</code></li>
+<li>
+<p>Receive:</p>
+<ul>
+<li>
+<p>data:</p>
+<ul>
+<li>Type: Dict</li>
+<li>Example:</li>
+</ul>
+<p><code>{
+    "username": "string USERNAME_IN_SN",
+    "auth_code": "string OPTIONAL PASS_OR_ACCESS_CODE"
+}</code></p>
+<ul>
+<li>Indications: The field "auth_code" could be not given in the first call.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return: </p>
+<ul>
+<li>Type: Dict</li>
+<li>Example: </li>
+</ul>
+<p><code>{
+    "detail": "string RESPONSE_TEXT",
+    "code": integer TRANSLATOR_CODE,
+    "redirectURL": "string OPTIONAL URL_TO_REDIRECT_USER"
+}</code></p>
+<ul>
+<li>Indications: <ul>
+<li>The field "code" is one of the Translator's code show before.</li>
+<li>The field "redirectURL" exist for oauth2 authentications to redirect user to the properly authentication service.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sendtext-sendimage-sendvideo-and-sendaudio">sendText, sendImage, sendVideo and sendAudio<a class="headerlink" href="#sendtext-sendimage-sendvideo-and-sendaudio" title="Permanent link">#</a></h3>
+<p>This methods have the same structure and should send a message of each kind.</p>
+<ul>
+<li>Signature: <code>def sendKIND(self, message):</code></li>
+<li>Receive:<ul>
+<li>message:<ul>
+<li>Type: <a href="../../models/message/">Message</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return: </p>
+<ul>
+<li>Type: Dict</li>
+<li>Example: </li>
+</ul>
+<p><code>{
+    "detail": "string RESPONSE_TEXT",
+    "code": integer TRANSLATOR_CODE
+}</code></p>
+</li>
+</ul>
+<h2 id="enable-new-translator">Enable new Translator<a class="headerlink" href="#enable-new-translator" title="Permanent link">#</a></h2>
+<p>To be able to use the new translator, it should be added to the socialNetworks file (translator/fixtures/socialNetworks.json) 
+or directly to the database.</p>
+<p>After that, the translator factory (/translator/translators/TranslatorFactory.py) should include the new translator 
+in the build method, using the same id added in the database.</p>
+<h2 id="utils">Utils<a class="headerlink" href="#utils" title="Permanent link">#</a></h2>
+<p>Translator have a common <code>utils</code> file with useful functions.</p>
+<h4 id="get-social-networks-username-from-message">Get social network's username from Message<a class="headerlink" href="#get-social-networks-username-from-message" title="Permanent link">#</a></h4>
+<p>This function return the username of the sender and receiver given a Message object.
+The username corresponds to that of the social network specified in the Message object given.</p>
+<ul>
+<li>Signature: <code>def getUsernameFromMessage(msg):</code></li>
+<li>
+<p>Receive:</p>
+<ul>
+<li>msg:<ul>
+<li>Type: <a href="../../models/message/">Message</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return: </p>
+<ul>
+<li>Type: Tuple</li>
+<li>Example: </li>
+</ul>
+<p><code>(
+    "string FROM_USER_USERNAME" | None,
+    "string TO_USER_USERNAME" | None
+)</code></p>
+</li>
+</ul>
+<h4 id="get-social-networks-alias-from-message">Get social network's alias from Message<a class="headerlink" href="#get-social-networks-alias-from-message" title="Permanent link">#</a></h4>
+<p>This function return the alias of the sender and receiver given a Message object.
+The alias corresponds to that of the social network specified in the Message object given.</p>
+<ul>
+<li>Signature: <code>def getAliasFromMessage(msg):</code></li>
+<li>
+<p>Receive:</p>
+<ul>
+<li>msg:<ul>
+<li>Type: <a href="../../models/message/">Message</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Return: </p>
+<ul>
+<li>Type: Tuple</li>
+<li>Example: </li>
+</ul>
+<p><code>(
+    "string FROM_USER_ALIAS" | None,
+    "string TO_USER_ALIAS" | None
+)</code></p>
+</li>
+</ul>
+<h4 id="save-incoming-message">Save incoming message<a class="headerlink" href="#save-incoming-message" title="Permanent link">#</a></h4>
+<p>This function save a message receive through the translator into the database.</p>
+<ul>
+<li>Signature: <code>def saveIncomingMessage(msg):</code></li>
+<li>Receive:<ul>
+<li>msg:<ul>
+<li>Type: dict</li>
+<li>Example:   <br />
+<code>{
+    "fromUser": User,
+    "toUser": User,
+    "through": "string SOCIAL_ID",
+    "datetime": datetime,
+    "content": "string MESSAGE_CONTENT",
+    "file": File
+}</code></li>
+<li>Indications: <ul>
+<li><a href="https://docs.djangoproject.com/en/1.11/ref/contrib/auth/#django.contrib.auth.models.User">User</a>
+    refers to the Django User Model.</li>
+<li><a href="https://docs.djangoproject.com/en/1.11/ref/files/file/">File</a>
+    refers to the Django File and the property <code>name</code> should be replaced with the temporary file location</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Return: <ul>
+<li>Type: <a href="../../models/message/">Message</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="save-outcoming-message">Save outcoming message<a class="headerlink" href="#save-outcoming-message" title="Permanent link">#</a></h4>
+<p>This function save a message send through the translator into the database.
+This function is identical to <a href="#save-incoming-message">Save incoming message</a> except for the name.</p>
+<ul>
+<li>Signature: <code>def saveOutcomingMessage(msg):</code></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../gmail/" class="btn btn-neutral float-right" title="Gmail">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../api/translator/" class="btn btn-neutral" title="Translator"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/farodrig/SocialTranslator/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../api/translator/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../gmail/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
