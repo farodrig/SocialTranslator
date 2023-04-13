@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pacific-card-187718",
+  "private_key_id": "SOME_ID",
+  "private_key": "SOME_KEY",
+  "client_email": "social-translator-service@pacific-card-187718.iam.gserviceaccount.com",
+  "client_id": "112912830855561869617",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/social-translator-service%40pacific-card-187718.iam.gserviceaccount.com"
+}

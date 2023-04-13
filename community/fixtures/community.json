@@ -1,0 +1,15 @@
+[
+
+   {
+      "model":"community.community",
+      "pk":1,
+      "fields":{
+         "name":"Comunidad de prueba",
+         "members":[
+            2,
+            3,
+            4
+         ]
+      }
+   }
+]

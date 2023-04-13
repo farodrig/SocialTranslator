@@ -1,0 +1,34 @@
+[
+   {
+      "model":"translator.socialnetwork",
+      "pk":"gmail",
+      "fields":{
+         "name":"Gmail",
+         "pushNotification":true
+      }
+   },
+   {
+      "model":"translator.socialnetwork",
+      "pk":"skype",
+      "fields":{
+         "name":"Skype",
+         "pushNotification":false
+      }
+   },
+   {
+      "model":"translator.socialnetwork",
+      "pk":"telegram",
+      "fields":{
+         "name":"Telegram",
+         "pushNotification":false
+      }
+   },
+   {
+      "model":"translator.socialnetwork",
+      "pk":"whatsapp",
+      "fields":{
+         "name":"Whatsapp",
+         "pushNotification":false
+      }
+   }
+]

@@ -1,0 +1,27 @@
+site_name: SocialTranslator Docs
+
+nav:
+    - Home: index.md
+    - Auth:
+      - JWT: auth/jwt.md
+      - OAuth2: auth/oauth2.md
+    - API:
+      - Community: api/community.md
+      - Translator: api/translator.md
+    - Translators:
+      - Add new: translators/how-to.md
+      - Gmail: translators/gmail.md
+      - Skype: translators/skype.md
+      - Telegram: translators/telegram.md
+      - Whatsapp: translators/whatsapp.md
+    - Models:
+      - Message: models/message.md
+      - Has Social Network: models/hsn.md
+    - About: about.md
+
+theme: readthedocs
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+repo_url: https://github.com/farodrig/SocialTranslator

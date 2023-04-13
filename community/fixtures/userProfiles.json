@@ -1,0 +1,23 @@
+[
+  {
+    "model":"community.userprofile",
+    "pk":2,
+    "fields":{
+      "requires_assistant":false
+    }
+  },
+  {
+    "model":"community.userprofile",
+    "pk":3,
+    "fields":{
+      "requires_assistant":true
+    }
+  },
+  {
+    "model":"community.userprofile",
+    "pk":4,
+    "fields":{
+      "requires_assistant":false
+    }
+  }
+]

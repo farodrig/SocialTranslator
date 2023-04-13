@@ -1,0 +1,21 @@
+{
+	"installed": {
+		"client_id": "538662359737-idbup8tg5qbl1j3bmsojpd9rsm10je4f.apps.googleusercontent.com",
+		"project_id": "pacific-card-187718",
+		"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+		"token_uri": "https://oauth2.googleapis.com/token",
+		"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+		"client_secret": "SOME_SECRET",
+		"redirect_uris": [
+			"https://guarded-retreat-96811.herokuapp.com/translator/auth/gmail",
+			"https://guarded-retreat-96811.herokuapp.com/translator/auth/gmail/",
+			"https://socialtranslator.dcc.uchile.cl/translator/auth/gmail",
+			"https://socialtranslator.dcc.uchile.cl/translator/auth/gmail/"
+		],
+		"javascript_origins": [
+			"http://localhost:8080",
+			"https://guarded-retreat-96811.herokuapp.com",
+			"https://socialtranslator.dcc.uchile.cl"
+		]
+	}
+}
